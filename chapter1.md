@@ -312,12 +312,14 @@ An example of an elif statement would be:
         print('three')
 Since 5 does not equal to 6, the if statement will not be executed, so the code moves on the the next statement.
 
-in the elif expression, since 5 equals to 5, the computer will execute the statement wrapped inside elif and print the string 'two'
+In the elif expression, since 5 equals to 5, the computer will execute the statement wrapped inside elif and print the string 'two'
 
 Since one statement has already been executed, the program jumps out from the if-elif-else statement, so the else statement will not be executed.
 
 `@instructions`
 Add an elif statement in between the if and else statements, and set the expression so that it compares variable x to string 'avocado' by seeing if they are equal
+
+
 
 Run the code and see what is the output!
 `@hint`
@@ -415,7 +417,9 @@ x = 10
 
 `@sample_code`
 ```{python}
-
+while ( ___ >= ___):
+    print(___)
+    x -= ___
 ```
 
 `@solution`
@@ -428,7 +432,8 @@ while ( x >= 2):
 
 `@sct`
 ```{python}
-test_object('x', eq_condition = "equal", do_eval=True, incorrect_msg = "Is the condition set for while loop correct?")
+#test_object('x', eq_condition = "equal", do_eval=True, incorrect_msg = "Is the condition set for while loop correct?")
+has_equal_ast(code = "x >= 2", exact = False)
 
 test_output_contains('x\nx\nx\nx\nx\nx\nx\nx\nx\n', pattern = False, no_output_msg = 'Is the output correct?')
 
