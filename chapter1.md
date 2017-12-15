@@ -335,7 +335,8 @@ x = 'avocados'
 if (x == 'bananas'):
     print ('I love bananas!')
 #insert your code here
-___
+elif(x == '___'):
+    print ('I love avocados!')
 else:
     print ('I love apples!')
 ```
@@ -476,7 +477,9 @@ x = 1
 
 `@sample_code`
 ```{python}
-
+for ___ in range(___):
+    x *= __
+print (__)
 ```
 
 `@solution`
@@ -489,6 +492,8 @@ print (x)
 `@sct`
 ```{python}
 test_object('x', eq_condition = "equal", do_eval=True, incorrect_msg = "Check your for loop condition and increasing statement again.")
+
+test_output_contains('28', pattern = False, no_output_msg = 'Is the output correct?')
 
 ```
 
@@ -524,7 +529,18 @@ An array named array has already been declared for you.
 Create a loop control statement that iterates every element in array, and prints out the value if the element in the array is greater than or equal to the first element.
 
 **first element is already named 'first'
+
+You can loop through arrays by:
+
+    for "variable_name" in "array_name":
+        **statement**
+
 `@hint`
+Fill in the blanks with the appropriate array name
+
+Fill in the if expression that yields True if the element is greater than or equal to the "first" variable
+
+print out the correct element (looping variable)
 
 `@pre_exercise_code`
 ```{python}
@@ -534,6 +550,10 @@ array = [5, 3, 7, 8, 2, 7, 9, 2, 7, 5, 6, 10, 12, 3, 2, 14, 6]
 `@sample_code`
 ```{python}
 first = array[0]
+for x in ___:
+    if(_____):
+        print(__)
+    
 
 ```
 
@@ -578,6 +598,8 @@ Create a nested loop that checks if each of the element in array a is in either 
 
 If it is true, then it will print out the element; it prints nothing if it is false.
 
+**additional: the keyword 'break' forces the computer to break out from the loop whenever encountered.
+
 `@hint`
 Use for loops to check every element in the arrays
 `@pre_exercise_code`
@@ -593,7 +615,7 @@ for ____ in ____:
     for ____ in ____:
         if (________):
             ________
-            break
+            break #A key word that breaks out from the loop
 ```
 
 `@solution`
